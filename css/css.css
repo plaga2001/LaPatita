@@ -1,7 +1,85 @@
 .main-wrapper{
     display: grid;
     grid-template-areas: 
+    "header header img img"
+    "cards cards cards cards"
     ;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px 150px ;
+    grid-template-rows: 550px 200px ;
+}
+
+/*header*/
+
+.header{
+    grid-area: header;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    color: white;
+    font-size: 1.3em;
+    letter-spacing: 4px;
+    font-weight: bolder;
+}
+
+.slogan{
+    font-size: 0.8em;
+    color: #A560B6;
+    font-weight: lighter;
+}
+
+.header__img{
+    grid-area: img;
+}
+
+.header__img__dog{
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+/*Card*/
+
+.cards{
+    margin: 10px;
+    grid-area: cards;
+    display: grid;
+    grid-template-areas: 
+    "card-1 card-2"
+    "card-1 card-3"
+    ;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr, 1fr;
+    gap: 10px;
+}
+
+.card-1{
+    grid-area: card-1;
+    background: linear-gradient(90deg, #DA22FF 0%, #9733EE 94.79%);
+}
+
+.card-2{
+    grid-area: card-2;
+    background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+}
+
+.card-3{
+    grid-area: card-3;
+    background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+}
+
+.cardw{
+    display: flex;
+    border-radius: 15px;
+    color: white;
+    align-items: flex-end;
+}
+
+.cardw-title{
+    margin: 8px;
+    font-size: 1.2em;
 }
