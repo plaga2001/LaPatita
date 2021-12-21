@@ -1,3 +1,7 @@
 .main-wrapper{
-    
+    display: grid;
+    grid-template-areas: 
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 550px 150px ;
 }
