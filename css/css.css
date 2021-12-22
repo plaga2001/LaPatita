@@ -50,9 +50,10 @@
     "cards cards cards cards"
     ". title-a title-a ."
     "anima-a anima-a text-a text-a"
+    "donar-text donar-text img-donar img-donar"
     ;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px 200px 50px 250px;
+    grid-template-rows: 550px 200px 50px 250px 250px;
 }
 
 /*header*/
@@ -221,4 +222,15 @@
     height: 100%;
     max-width: 100%;
     width: auto;
+}
+
+/*Donar*/
+.donar-text{
+    grid-area: donar-text;
+    margin-top: 50px;
+}
+
+.donar-img{
+    grid-area: img-donar;
+    margin-top: 50px;
 }
