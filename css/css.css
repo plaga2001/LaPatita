@@ -1,11 +1,58 @@
+@keyframes pill-1 {
+    0%{
+        width: 320px;
+    }
+
+    25%{
+        width: 330px;
+    }
+
+    50%{
+        width: 320px;
+    }
+
+    75%{
+        width: 310px;
+    }
+
+    100%{
+        width: 320px;
+    }
+}
+
+@keyframes pill-2 {
+    0%{
+        width: 290px;
+    }
+
+    25%{
+        width: 300px;
+    }
+
+    50%{
+        width: 290px;
+    }
+
+    75%{
+        width: 280px;
+    }
+
+    100%{
+        width: 290px;
+    }
+}
+
 .main-wrapper{
+    font-family: sans-serif;
     display: grid;
     grid-template-areas: 
     "header header img img"
     "cards cards cards cards"
+    ". title-a title-a ."
+    "anima-a anima-a text-a text-a"
     ;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px 200px ;
+    grid-template-rows: 550px 200px 50px 250px;
 }
 
 /*header*/
@@ -33,6 +80,7 @@
 
 .header__img{
     grid-area: img;
+    background-color:black ;
 }
 
 .header__img__dog{
@@ -107,4 +155,70 @@
 	background-position: center;
     color: white;
     text-decoration: none;
+}
+
+/*Adopta*/
+
+.adopta__title{
+    grid-area: title-a;
+    text-align: center;
+    color: #20123A;
+}
+
+.adopta__animation{
+    grid-area: anima-a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pill-1{
+    background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+    max-width: 320px;
+    height: 130px;
+    border-radius: 60px;
+    position: absolute;
+    transform: rotate(50deg);
+    z-index: -1;
+    animation: pill-1 3s infinite linear;
+}
+
+.pill-2{
+    background: linear-gradient(90deg, #4CB8C4 0%, #3CD3AD 100%);
+    max-width: 290px;
+    height: 130px;
+    border-radius: 60px;
+    position: absolute;
+    transform: rotate(135deg);
+    z-index: -2;
+    animation: pill-2 4s infinite linear;
+}
+
+
+.adopta__text{
+    grid-area: text-a;
+    color: #20123A;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.adopta__text__p{
+    margin: 20px 18%;
+}
+
+.btn{
+    border-radius: 5px;
+    font-size: 1em;
+    border: solid 2px #1488CC;
+}
+
+.image{
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    width: auto;
 }
