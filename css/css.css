@@ -50,10 +50,12 @@
     "cards cards cards cards"
     ". title-a title-a ."
     "anima-a anima-a text-a text-a"
-    "donar-text donar-text img-donar img-donar"
+    ". title-c title-c ."
+    "text-c text-c anima-c anima-c"
     ;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px 200px 50px 250px 250px;
+    grid-template-rows: 550px 200px 50px 250px 50px 400px;
+    row-gap: 20px;
 }
 
 /*header*/
@@ -94,7 +96,7 @@
 /*Card*/
 
 .cards{
-    margin: 10px;
+    margin: 0 10px;
     grid-area: cards;
     display: grid;
     grid-template-areas: 
@@ -140,6 +142,9 @@
 	background-position: center;
     color: white;
     text-decoration: none;
+    box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
+-webkit-box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
+-moz-box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
 }
 
 .card-2:hover{
@@ -148,6 +153,9 @@
 	background-position: left;
     color: white;
     text-decoration: none;
+    box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
+-webkit-box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
+-moz-box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
 }
 
 .card-3:hover{
@@ -156,14 +164,20 @@
 	background-position: center;
     color: white;
     text-decoration: none;
+    box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
+-webkit-box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
+-moz-box-shadow: 0px 1px 18px 2px rgba(59,59,59,0.77);
 }
 
 /*Adopta*/
 
-.adopta__title{
-    grid-area: title-a;
+.title{
     text-align: center;
     color: #20123A;
+}
+
+.adopta__title{
+    grid-area: title-a;
 }
 
 .adopta__animation{
@@ -215,6 +229,11 @@
     border-radius: 5px;
     font-size: 1em;
     border: solid 2px #1488CC;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #1488CC;
 }
 
 .image{
@@ -225,12 +244,62 @@
 }
 
 /*Donar*/
-.donar-text{
-    grid-area: donar-text;
-    margin-top: 50px;
+
+.colabora__title{
+    grid-area: title-c;
 }
 
-.donar-img{
-    grid-area: img-donar;
-    margin-top: 50px;
+.colabora__text{
+    grid-area: text-c;
+    color: #20123A;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.colabora__animation{
+    grid-area: anima-c;
+    display: flex;
+    justify-content: center;
+}
+
+.colabora__animation__img{
+    border-radius: 25px;
+}
+
+.colabora__text__p{
+    margin: 20px 18%;
+}
+
+/*footer*/
+
+.footer-wrap{
+    display: grid;
+    grid-template-areas: 
+    "redes text1 text2"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr;
+    column-gap: 20%;
+    color: white;
+}
+
+.redes-iconos{
+    grid-area: redes;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textf-1{
+    grid-area: text1;
+    text-align: center;
+}
+
+.textf-2{
+    grid-area: text2;
+    text-align: center;
 }
