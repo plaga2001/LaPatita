@@ -42,7 +42,7 @@
     }
 }
 
-.main-wrapper{
+#main-wrapper{
     font-family: sans-serif;
     display: grid;
     grid-template-areas: 
@@ -222,7 +222,7 @@
     text-align: center;
 }
 
-.adopta__text__p{
+.text--modifier{
     margin: 20px 18%;
 }
 
@@ -271,7 +271,7 @@
     border-radius: 25px;
 }
 
-.colabora__text__p{
+.text--modifier{
     margin: 20px 18%;
 }
 
@@ -305,10 +305,34 @@
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Querys*/
 
-@media (max-width: 794px) {
-    .main-wrapper{
+@media (max-width: 800px) {
+    #main-wrapper{
         font-family: sans-serif;
         display: grid;
         grid-template-areas: 
@@ -346,7 +370,7 @@
 }
 
 @media (max-width: 630px) {
-    .main-wrapper{
+    #main-wrapper{
         font-family: sans-serif;
         display: grid;
         grid-template-areas: 
@@ -383,4 +407,77 @@
         row-gap: 5%;
         color: white;
     }
+}
+
+@media (max-width: 480px) {
+    #main-wrapper{
+        font-family: sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "cards"
+        "title-a"
+        "anima-a"
+        "text-a"
+        "title-c"
+        "anima-c"
+        "text-c"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 250px 50px 150px 200px 50px 250px 240px;
+        row-gap: 25px;
+    }
+
+    .header__img{
+        display: none;
+    }
+
+    .text--modifier{
+        font-size: 0.9em;
+        margin: 0 5%;
+    }
+
+    .pill-1{
+        max-width: 220px;
+    }
+
+    .pill-2{
+        max-width: 210px;
+    }
+
+    .title--general{
+        font-size: 1.3em;
+    }
+
+    .cards{
+        margin: 0 10px;
+        grid-area: cards;
+        display: grid;
+        grid-template-areas: 
+        "card-1"
+        "card-2" 
+        "card-3"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 80px 80px ;
+        gap: 10px;
+    }
+
+    .footer-wrap{
+        display: grid;
+        grid-template-areas: 
+        "redes"
+        "text1"
+        "text2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px;
+        row-gap: 5%;
+        color: white;
+        text-align: center;
+    }
+
+    .footer__text__p{
+        font-size: 0.8em;
+    }
+
 }
