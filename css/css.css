@@ -344,3 +344,43 @@
         color: white;
     }
 }
+
+@media (max-width: 630px) {
+    .main-wrapper{
+        font-family: sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "header header img img"
+        "cards cards cards cards"
+        "title-a title-a title-a title-a"
+        "anima-a anima-a anima-a anima-a"
+        "text-a text-a text-a text-a"
+        "title-c title-c title-c title-c"
+        "text-c text-c text-c anima-c"
+        ;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px 150px 50px 200px 200px 50px 250px;
+        row-gap: 25px;
+    }
+
+    .pill-1{
+        max-width: 270px;
+        height: 120px;
+    }
+
+    .pill-2{
+        max-width: 250px;
+    }
+
+    .footer-wrap{
+        display: grid;
+        grid-template-areas: 
+        "redes"
+        "text1"
+        "text2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px;
+        row-gap: 5%;
+        color: white;
+    }
+}
