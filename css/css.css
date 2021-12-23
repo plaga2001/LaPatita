@@ -311,30 +311,100 @@
 *                                                                    *
 *********************************************************************/
 
-#main--nosotros{
-    
+/*Nosotros*/
+
+@keyframes anima-img1-ns {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(1deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-1deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
+#main--nosotros{
+    color: #20123A;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:  
+    "img1-ns text-ns text-ns img2-ns"
+    "consul consul consul consul"
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 500px;
+}
 
+.nosotros__img1{
+    grid-area: img1-ns;
+    display: flex;
+    align-items: center;
+}
 
+.nosotros__img2{
+    grid-area: img2-ns;
+    display: flex;
+    align-items: center;
+}
 
+.nosotros__text{
+    grid-area: text-ns;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto 15%;
+    flex-direction: column;
+}
 
+.nosotros__text__p{
+    font-size: 1.1em;
+}
 
+.image--size{
+    max-width: 100%;
+    min-width: 250px;
+    height: 200px;
+}
 
+.image1--anima{
+    border-radius: 0 20px 20px 0 ;
+    animation: anima-img1-ns 1s infinite linear;
+}
 
+.image2--anima{
+    border-radius: 20px 0 0 20px ;
+    animation: anima-img1-ns 1s infinite linear;
+}
 
+/*Consultorios*/
 
+.consultorios{
+    grid-area: consul;
+    color: white;
+    text-align: center;
+    background-color: #0d0914;
+    padding: 20px 0;
+}
 
+.consultorios__text{
+    margin: 0 10%;
+}
 
-
-
-
-
-
-
-
-
-
+.consultorios__images{
+    height: 60%;
+}
 
 /*Querys*/
 
@@ -373,6 +443,31 @@
         grid-template-rows: 3fr;
         column-gap: 5%;
         color: white;
+    }
+
+    /*Nosotros*/
+
+    #main--nosotros{
+        color: #20123A;
+        overflow: hidden;
+        display: grid;
+        grid-template-areas:  
+        "img1-ns . . ."
+        "text-ns text-ns text-ns text-ns"
+        ". . . img2-ns"
+        "consul consul consul consul"
+        ;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 150px auto 500px;
+        row-gap: 20px;
+    }
+
+    .nosotros__text{
+        text-align: center;
+    }
+
+    .consultorios__images{
+        display: flex;
     }
 }
 
@@ -413,6 +508,32 @@
         grid-template-rows: 100px 100px 100px;
         row-gap: 5%;
         color: white;
+    }
+
+    /*Nosotros*/
+    #main--nosotros{
+        color: #20123A;
+        overflow: hidden;
+        display: grid;
+        grid-template-areas:  
+        "img1-ns img1-ns . ."
+        "text-ns text-ns text-ns text-ns"
+        ". . img2-ns img2-ns"
+        "consul consul consul consul"
+        ;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 200px auto auto;
+        row-gap: 20px;
+    }
+    
+    .consultorios__images{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .consultorios__images__img{
+        width: 50%;
     }
 }
 
@@ -477,7 +598,7 @@
         "text1"
         "text2";
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 150px 150px;
+        grid-template-rows: repeat(3, auto);
         row-gap: 5%;
         color: white;
         text-align: center;
@@ -485,6 +606,41 @@
 
     .footer__text__p{
         font-size: 0.8em;
+        
     }
 
-}
+    /*Nosotros*/
+    #main--nosotros{
+        color: #20123A;
+        overflow: hidden;
+        display: grid;
+        grid-template-areas:  
+        "img1-ns"
+        "text-ns"
+        "img2-ns"
+        "consul"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 20px;
+    }
+
+    .consultorios__images{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .consultorios__images__img{
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .image--size{
+        width: 100%;
+        border-radius: 0;
+        animation-play-state: paused;
+    }
+}   
