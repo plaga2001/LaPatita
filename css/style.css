@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap");
+@-webkit-keyframes pill-1 {
+  0% {
+    width: 320px;
+  }
+  25% {
+    width: 330px;
+  }
+  50% {
+    width: 320px;
+  }
+  75% {
+    width: 310px;
+  }
+  100% {
+    width: 320px;
+  }
+}
+@keyframes pill-1 {
+  0% {
+    width: 320px;
+  }
+  25% {
+    width: 330px;
+  }
+  50% {
+    width: 320px;
+  }
+  75% {
+    width: 310px;
+  }
+  100% {
+    width: 320px;
+  }
+}
+
+@-webkit-keyframes pill-2 {
+  0% {
+    width: 290px;
+  }
+  25% {
+    width: 300px;
+  }
+  50% {
+    width: 290px;
+  }
+  75% {
+    width: 280px;
+  }
+  100% {
+    width: 290px;
+  }
+}
+
+@keyframes pill-2 {
+  0% {
+    width: 290px;
+  }
+  25% {
+    width: 300px;
+  }
+  50% {
+    width: 290px;
+  }
+  75% {
+    width: 280px;
+  }
+  100% {
+    width: 290px;
+  }
+}
+
+.image {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*HEADER*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+.header__description {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.header__description__logo__h1 {
+  color: #ffffff;
+}
+
+.header__description__logo__span {
+  color: #A560B6;
+  font-size: 1.2em;
+}
+
+/*CARDS*/
+.cards--assembled {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "card-1 card-2" "card-1 card-3";
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (100px)[2];
+      grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+  margin: 10px;
+}
+
+.cards__1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: card-1;
+  background: -webkit-gradient(linear, left top, right top, from(#DA22FF), color-stop(94.79%, #9733EE));
+  background: linear-gradient(90deg, #DA22FF 0%, #9733EE 94.79%);
+}
+
+.cards__1__name__title {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.cards__1:hover {
+  background-image: url(https://images.unsplash.com/photo-1599443015574-be5fe8a05783?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  color: #ffffff;
+  text-decoration: none;
+  background-size: cover;
+  background-position: left;
+  box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+  -webkit-box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+  -moz-box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+}
+
+.cards__2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card-2;
+  background: -webkit-gradient(linear, left top, right top, from(#1488CC), to(#2B32B2));
+  background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+}
+
+.cards__2__name__title {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.cards__2:hover {
+  background-image: url(https://images.unsplash.com/photo-1625321150203-cea4bee44b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  color: #ffffff;
+  text-decoration: none;
+  background-size: cover;
+  background-position: left;
+  box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+  -webkit-box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+  -moz-box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+}
+
+.cards__3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card-3;
+  background: -webkit-gradient(linear, left top, right top, from(#1488CC), to(#2B32B2));
+  background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+}
+
+.cards__3__name__title {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.cards__3:hover {
+  background-image: url(https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/5971c6555bafe801185a6653/perro-juguete-rojo-kong.jpg);
+  color: #ffffff;
+  text-decoration: none;
+  background-size: cover;
+  background-position: left;
+  box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+  -webkit-box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+  -moz-box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
+}
+/*# sourceMappingURL=style.css.map */
