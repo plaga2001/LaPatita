@@ -59,25 +59,36 @@ $font-general: 'Mitr', sans-serif;
 $font-color-general: #20123A;
 $font-color-colorized: #A560B6;
 
+body{
+    color: $font-color-general;
+    font-family: $font-general;
+}
+
 /*HEADER*/
 .header{
     display: flex;
     height: 500px;
     justify-content: center;
     background-color: black;
+    width: 100%;
+    overflow: hidden;
     &__description{
         background-color: black;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50%;
         &__logo__h1{
             color: #ffffff;
+            font-size: 2.7em;
+            letter-spacing: 5px;
         }
         &__logo__span{
             color: $font-color-colorized;
             font-size: 1.2em;
         }
+    }
+    &__img{
+        transform: translateX(30%);
     }
 }
 

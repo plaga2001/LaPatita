@@ -83,6 +83,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  color: #20123A;
+  font-family: "Mitr", sans-serif;
+}
+
 /*HEADER*/
 .header {
   display: -webkit-box;
@@ -93,6 +98,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: black;
+  width: 100%;
+  overflow: hidden;
 }
 
 .header__description {
@@ -106,16 +113,22 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
 }
 
 .header__description__logo__h1 {
   color: #ffffff;
+  font-size: 2.7em;
+  letter-spacing: 5px;
 }
 
 .header__description__logo__span {
   color: #A560B6;
   font-size: 1.2em;
+}
+
+.header__img {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
 }
 
 /*CARDS*/
