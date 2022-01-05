@@ -1,44 +1,44 @@
 @keyframes pill-1 {
     0%{
-        width: 320px;
+        height: 370px;
     }
 
     25%{
-        width: 330px;
+        height: 380px;
     }
 
     50%{
-        width: 320px;
+        height: 370px;
     }
 
     75%{
-        width: 310px;
+        height: 360px;
     }
 
     100%{
-        width: 320px;
+        height: 370px;
     }
 }
 
 @keyframes pill-2 {
     0%{
-        width: 290px;
+        height: 330px;
     }
 
     25%{
-        width: 300px;
+        height: 340px;
     }
 
     50%{
-        width: 290px;
+        height: 330px;
     }
 
     75%{
-        width: 280px;
+        height: 320px;
     }
 
     100%{
-        width: 290px;
+        height: 330px;
     }
 }
 
@@ -196,6 +196,28 @@ body{
         max-width: 50%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        &__pill-1{
+            width: 140px;
+            height: 370px;
+            border-radius: 70px;
+            background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+            position: absolute;
+            transform: rotate(-41.23deg);
+            z-index: -2;
+            animation: pill-1 3s infinite;
+        }
+        &__pill-2{
+            width: 140px;
+            height: 330px;
+            border-radius: 70px;
+            background: linear-gradient(90deg, #4CB8C4 0%, #3CD3AD 100%);
+            position: absolute;
+            transform: rotate(44.91deg);
+            z-index: -1;
+            animation: pill-2 3s infinite;
+            animation-delay: 1s;
+        }
     }
     &__textbox{
         display: flex;
@@ -205,7 +227,7 @@ body{
         max-width: 50%;
         text-align: center;
         &__pbox__p{
-            margin: 20px 50px;
+            margin: 20px 20%;
         }
         &__titlebox__span{
             color: $font-special;

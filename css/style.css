@@ -2,72 +2,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Varela+Round&display=swap");
 @-webkit-keyframes pill-1 {
   0% {
-    width: 320px;
+    height: 370px;
   }
   25% {
-    width: 330px;
+    height: 380px;
   }
   50% {
-    width: 320px;
+    height: 370px;
   }
   75% {
-    width: 310px;
+    height: 360px;
   }
   100% {
-    width: 320px;
+    height: 370px;
   }
 }
 @keyframes pill-1 {
   0% {
-    width: 320px;
+    height: 370px;
   }
   25% {
-    width: 330px;
+    height: 380px;
   }
   50% {
-    width: 320px;
+    height: 370px;
   }
   75% {
-    width: 310px;
+    height: 360px;
   }
   100% {
-    width: 320px;
+    height: 370px;
   }
 }
 
 @-webkit-keyframes pill-2 {
   0% {
-    width: 290px;
+    height: 330px;
   }
   25% {
-    width: 300px;
+    height: 340px;
   }
   50% {
-    width: 290px;
+    height: 330px;
   }
   75% {
-    width: 280px;
+    height: 320px;
   }
   100% {
-    width: 290px;
+    height: 330px;
   }
 }
 
 @keyframes pill-2 {
   0% {
-    width: 290px;
+    height: 330px;
   }
   25% {
-    width: 300px;
+    height: 340px;
   }
   50% {
-    width: 290px;
+    height: 330px;
   }
   75% {
-    width: 280px;
+    height: 320px;
   }
   100% {
-    width: 290px;
+    height: 330px;
   }
 }
 
@@ -261,6 +261,39 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adopta__imgbox__pill-1 {
+  width: 140px;
+  height: 370px;
+  border-radius: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(#EC008C), to(#FC6767));
+  background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+  position: absolute;
+  -webkit-transform: rotate(-41.23deg);
+          transform: rotate(-41.23deg);
+  z-index: -2;
+  -webkit-animation: pill-1 3s infinite;
+          animation: pill-1 3s infinite;
+}
+
+.adopta__imgbox__pill-2 {
+  width: 140px;
+  height: 330px;
+  border-radius: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(#4CB8C4), to(#3CD3AD));
+  background: linear-gradient(90deg, #4CB8C4 0%, #3CD3AD 100%);
+  position: absolute;
+  -webkit-transform: rotate(44.91deg);
+          transform: rotate(44.91deg);
+  z-index: -1;
+  -webkit-animation: pill-2 3s infinite;
+          animation: pill-2 3s infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .adopta__textbox {
@@ -277,7 +310,7 @@ body {
 }
 
 .adopta__textbox__pbox__p {
-  margin: 20px 50px;
+  margin: 20px 20%;
 }
 
 .adopta__textbox__titlebox__span {
