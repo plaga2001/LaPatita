@@ -106,13 +106,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: black;
+  background-color: #000000;
   width: 100%;
   overflow: hidden;
 }
 
 .header__description {
-  background-color: black;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,6 +172,8 @@ body {
   grid-area: card-1;
   background: -webkit-gradient(linear, left top, right top, from(#DA22FF), color-stop(94.79%, #9733EE));
   background: linear-gradient(90deg, #DA22FF 0%, #9733EE 94.79%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cards__1__name__title {
@@ -196,6 +198,8 @@ body {
   grid-area: card-2;
   background: -webkit-gradient(linear, left top, right top, from(#1488CC), to(#2B32B2));
   background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cards__2__name__title {
@@ -220,6 +224,8 @@ body {
   grid-area: card-3;
   background: -webkit-gradient(linear, left top, right top, from(#1488CC), to(#2B32B2));
   background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cards__3__name__title {
@@ -238,6 +244,7 @@ body {
   -moz-box-shadow: 0px 1px 18px 2px rgba(59, 59, 59, 0.77);
 }
 
+/*ADOPTA*/
 .adopta {
   display: -webkit-box;
   display: -ms-flexbox;

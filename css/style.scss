@@ -86,11 +86,11 @@ body{
     display: flex;
     height: 500px;
     justify-content: center;
-    background-color: black;
+    background-color: #000000 ;
     width: 100%;
     overflow: hidden;
     &__description{
-        background-color: black;
+        background-color: #000000 ;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -131,6 +131,7 @@ body{
     &__1{
         grid-area: card-1;
         background: linear-gradient(90deg, #DA22FF 0%, #9733EE 94.79%);
+        transition: 0.5s;
         &__name__title{
             margin: 10px;
             font-size: 1.2em;
@@ -149,6 +150,7 @@ body{
     &__2{
         grid-area: card-2;
         background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+        transition: 0.5s;
         &__name__title{
             margin: 10px;
             font-size: 1.2em;
@@ -167,6 +169,7 @@ body{
     &__3{
         grid-area: card-3;
         background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+        transition: 0.5s;
         &__name__title{
             margin: 10px;
             font-size: 1.2em;
@@ -184,6 +187,7 @@ body{
     }
 }
 
+/*ADOPTA*/
 .adopta{
     display: flex;
     height: 400px;
