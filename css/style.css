@@ -71,6 +71,78 @@
   }
 }
 
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.8;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.8;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*Test*/
 /*---*/
 .image {
@@ -249,7 +321,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 400px;
+  height: 350px;
   margin: 10px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -324,5 +396,77 @@ body {
   color: "Varela Round", sans-serif;
   color: #A560B6;
   text-decoration: underline;
+}
+
+.colabora {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.colabora__textbox {
+  width: 50%;
+  text-align: center;
+}
+
+.colabora__textbox__pbox {
+  margin: 30px 20%;
+}
+
+.colabora__imgbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  position: relative;
+}
+
+.colabora__imgbox__img {
+  border-radius: 25px;
+  -webkit-animation: opacity 4s infinite linear;
+          animation: opacity 4s infinite linear;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.colabora__imgbox__img--short-1 {
+  position: absolute;
+  border-radius: 25px;
+  height: 180px;
+  top: 65%;
+  left: 5px;
+  -webkit-animation: opacity 4s infinite linear;
+          animation: opacity 4s infinite linear;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.colabora__imgbox__img--short-2 {
+  position: absolute;
+  border-radius: 25px;
+  height: 180px;
+  bottom: 65%;
+  right: 6px;
+  -webkit-animation: opacity 4s infinite linear;
+          animation: opacity 4s infinite linear;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.footer {
+  background-color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

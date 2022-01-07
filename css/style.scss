@@ -42,6 +42,52 @@
     }
 }
 
+@keyframes opacity {
+    0%{
+        opacity: 1;
+    }
+
+    5%{
+        opacity: 0.8;
+    }
+
+    10%{
+        opacity: 0.6;
+    }
+
+    20%{
+        opacity: 0.4;
+    }
+
+    30%{
+        opacity: 0.2;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.2;
+    }
+
+    60%{
+        opacity: 0.4;
+    }
+
+    70%{
+        opacity: 0.6;
+    }
+
+    80%{
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Varela+Round&display=swap');
 $font-general: 'Mitr', sans-serif;
@@ -190,7 +236,7 @@ body{
 /*ADOPTA*/
 .adopta{
     display: flex;
-    height: 400px;
+    height: 350px;
     margin: 10px 0;
     align-items: center;
     flex-wrap: wrap;
@@ -239,4 +285,53 @@ body{
             text-decoration: underline;
         }
     }
+}
+
+.colabora{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    &__textbox{
+        width: 50%;
+        text-align: center;
+        &__pbox{
+            margin: 30px 20%;
+        }
+    }
+    &__imgbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        position: relative;
+        &__img{
+            border-radius: 25px;
+            animation: opacity 4s infinite linear;
+            animation-delay: 4.5s;
+            &--short-1{
+                position: absolute;
+                border-radius: 25px;
+                height: 180px;
+                top: 65%;
+                left: 5px;
+                animation: opacity 4s infinite linear;
+                animation-delay: 4s;
+            }
+            &--short-2{
+                position: absolute;
+                border-radius: 25px;
+                height: 180px;
+                bottom: 65%;
+                right: 6px;
+                animation: opacity 4s infinite linear;
+                animation-delay: 5s;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #000000;
 }
