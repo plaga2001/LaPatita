@@ -314,7 +314,7 @@ body{
                 position: absolute;
                 border-radius: 25px;
                 height: 180px;
-                top: 65%;
+                top: 60%;
                 left: 5px;
                 animation: opacity 4s infinite linear;
                 animation-delay: 4s;
@@ -323,7 +323,7 @@ body{
                 position: absolute;
                 border-radius: 25px;
                 height: 180px;
-                bottom: 65%;
+                bottom: 60%;
                 right: 6px;
                 animation: opacity 4s infinite linear;
                 animation-delay: 5s;
@@ -333,5 +333,36 @@ body{
 }
 
 .footer{
+    margin: 50px 0 0 0;
     background-color: #000000;
+    font-size: 1.2em;
+    &__wrap{
+        padding: 5%;
+        display: grid;
+        grid-template-areas: 
+        "redes text-1 text-2";
+        grid-template-rows: 3fr;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15%;
+        color: white;
+        &__redes{
+            grid-area: redes;
+            margin-top: 20px;
+            &__icons{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        &__text--1{
+            grid-area: text-1;
+            text-align: center;
+        }
+        &__text--2{
+            grid-area: text-2;
+            text-align: center;
+        }
+        &__text__p{
+            margin: 20px;
+        }
+    }
 }

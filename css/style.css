@@ -446,7 +446,7 @@ body {
   position: absolute;
   border-radius: 25px;
   height: 180px;
-  top: 65%;
+  top: 60%;
   left: 5px;
   -webkit-animation: opacity 4s infinite linear;
           animation: opacity 4s infinite linear;
@@ -458,7 +458,7 @@ body {
   position: absolute;
   border-radius: 25px;
   height: 180px;
-  bottom: 65%;
+  bottom: 60%;
   right: 6px;
   -webkit-animation: opacity 4s infinite linear;
           animation: opacity 4s infinite linear;
@@ -467,6 +467,55 @@ body {
 }
 
 .footer {
+  margin: 50px 0 0 0;
   background-color: #000000;
+  font-size: 1.2em;
+}
+
+.footer__wrap {
+  padding: 5%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "redes text-1 text-2";
+  -ms-grid-rows: 3fr;
+      grid-template-rows: 3fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 15%;
+          column-gap: 15%;
+  color: white;
+}
+
+.footer__wrap__redes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: redes;
+  margin-top: 20px;
+}
+
+.footer__wrap__redes__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__wrap__text--1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text-1;
+  text-align: center;
+}
+
+.footer__wrap__text--2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: text-2;
+  text-align: center;
+}
+
+.footer__wrap__text__p {
+  margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */
