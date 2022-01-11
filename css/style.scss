@@ -493,16 +493,38 @@ body{
         margin: 10px;
     }
     .adopta{
-        display: flex;
-        height: 400px;
-        margin: 10px 0;
+        display: block;
+        height: 600px;
+        margin: 20px 0;
         align-items: center;
         flex-wrap: wrap;
         &__imgbox{
-            height: 60%;
+            margin: 0 auto;
+            height: 50%;
+            padding: 10px;
+            &__img{
+                max-width: 100%;
+                height: auto;
+                min-width: 300px;
+            }
+            &__pill-1{
+                width: 130px;
+                height: 330px;
+            }
+            &__pill-2{
+                width: 130px;
+                height: 280px;
+            }
         }
-        &__textbox__pbox__p{
-            margin: 10px 8%;
+        &__textbox{
+            display: inline;
+            margin: 10px 0;
+            &__titlebox{
+                margin: 20px 0 0 0;
+            }
+            &__pbox__p{
+                margin: 5px 5%;
+            }
         }
     }
     .colabora{

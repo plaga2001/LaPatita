@@ -687,11 +687,9 @@ body {
     margin: 10px;
   }
   .adopta {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 400px;
-    margin: 10px 0;
+    display: block;
+    height: 600px;
+    margin: 20px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -699,10 +697,32 @@ body {
         flex-wrap: wrap;
   }
   .adopta__imgbox {
-    height: 60%;
+    margin: 0 auto;
+    height: 50%;
+    padding: 10px;
+  }
+  .adopta__imgbox__img {
+    max-width: 100%;
+    height: auto;
+    min-width: 300px;
+  }
+  .adopta__imgbox__pill-1 {
+    width: 130px;
+    height: 330px;
+  }
+  .adopta__imgbox__pill-2 {
+    width: 130px;
+    height: 280px;
+  }
+  .adopta__textbox {
+    display: inline;
+    margin: 10px 0;
+  }
+  .adopta__textbox__titlebox {
+    margin: 20px 0 0 0;
   }
   .adopta__textbox__pbox__p {
-    margin: 10px 8%;
+    margin: 5px 5%;
   }
   .colabora {
     display: -webkit-box;
