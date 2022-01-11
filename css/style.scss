@@ -433,6 +433,7 @@ body{
             grid-template-columns: 1fr;
             column-gap: 15px;
             color: white;
+            row-gap: 20px;
             &__redes{
                 text-align: center;
                 grid-area: redes;
@@ -523,20 +524,132 @@ body{
                 margin: 20px 0 0 0;
             }
             &__pbox__p{
-                margin: 5px 5%;
+                margin: 5px 10%;
             }
         }
     }
     .colabora{
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: center;
-        height: 400px;
-        &__textbox__pbox__p{
-            margin: 10px 5%;
+        height: 600px;
+        &__textbox{ 
+            display: inline;
+            margin: 10px 0;
+            &__pbox__p{
+                margin: 5px 10%;
+            }
         }
-        &__imgbox__img{
-            width: 90%;
+        &__imgbox{
+            display: block;
+            margin: 0 auto;
+            &__img{
+                margin-top: 50px;
+                width: 100%;
+                &--short-1{
+                    position: absolute;
+                    border-radius: 25px;
+                    height: 110px;
+                    top: 70%;
+                    left: -20px;
+                    animation: opacity 4s infinite linear;
+                    animation-delay: 4s;
+                }
+                &--short-2{
+                    position: absolute;
+                    border-radius: 25px;
+                    min-width: 100px;
+                    width: 110px;
+                    height: auto;
+                    bottom: 50%;
+                    right: -20px;
+                    animation: opacity 4s infinite linear;
+                    animation-delay: 4s;
+                }
+            }
+    }
+}
+/*FOOTER*/
+.footer{
+    margin: 50px 0 0 0;
+    background-color: #000000;
+    font-size: 1.2em;
+    &__wrap{
+        padding: 5%;
+        display: grid;
+        grid-template-areas: 
+        "redes"
+        "text-1" 
+        "text-2";
+        grid-template-rows: 150px repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        column-gap: 15px;
+        color: white;
+        &__redes{
+            text-align: center;
+            grid-area: redes;
+            margin: 0 10%;
+            &__icons{
+                display: flex;
+                justify-content: space-evenly;  
+                margin-top: 50px;
+            }
+        }
+        &__text--1{
+            grid-area: text-1;
+            text-align: center;
+            margin: 0 10%;
+        }
+        &__text--2{
+            grid-area: text-2;
+            text-align: center;
+            margin: 0 10%;
+        }
+        &__text__p{
+            margin: 20px;
         }
     }
+}
+
+@media (max-width:480px) {
+    .adopta{
+        height: 760px;
+        &__textbox__pbox__p{
+            margin: 5px 10px;
+        }
+    }
+    
+    .colabora{
+        margin: 20px 0;
+        &__textbox__pbox__p{
+            margin: 5px 10px;
+        }
+        &__imgbox{
+            display: inline;
+            &__img{
+                height: auto;
+                margin: 10px 0;
+                border-radius: 0;
+                animation: none;
+            }
+            &__img--short-1{
+                display: none;
+            }
+            &__img--short-2{
+                display: none;
+            }
+        }
+    }
+}
+.footer{
+    &__wrap{
+        padding: 20px 5px; 
+        &__text--1{
+            margin: 0 10px;
+        }
+        &__text--2{
+            margin: 0 10px;
+        }
+    }
+}
 }
