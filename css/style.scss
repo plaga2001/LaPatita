@@ -124,6 +124,20 @@ body{
     font-family: $font-general;
 }
 
+h1{
+    display: block;
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
 /*HEADER*/
 .header{
     display: flex;
@@ -164,15 +178,15 @@ body{
 .cards{
     display: grid;
     grid-template-areas: 
-    "card-1 card-2"
-    "card-1 card-3"
+    "card1 card2"
+    "card1 card3"
     ;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 100px);
     gap: 10px;
     margin: 10px;
     &__1{
-        grid-area: card-1;
+        grid-area: card1;
         background: linear-gradient(90deg, #DA22FF 0%, #9733EE 94.79%);
         transition: 0.5s;
         &__name__title{
@@ -191,7 +205,7 @@ body{
         }
     }
     &__2{
-        grid-area: card-2;
+        grid-area: card2;
         background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
         transition: 0.5s;
         &__name__title{
@@ -210,7 +224,7 @@ body{
         }
     }
     &__3{
-        grid-area: card-3;
+        grid-area: card3;
         background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
         transition: 0.5s;
         &__name__title{
@@ -412,7 +426,7 @@ $color-bird: #00d7f9;
     justify-content: center;
     align-items: center;
     &__titlebox{
-        font-size: 50px;
+        font-size: 1.5em;
         color: white;
     }
 }
@@ -491,15 +505,15 @@ $color-bird: #00d7f9;
             }
         }
         &__card__titlebox{
-            transform: translate(-4px, -20px);
-            font-size: 1em;
+            transform: translate(-4px, -10px);
+            font-size: 1.5em;
             color: white;
         }
     }
 }
 
 .title--aves{
-    transform: rotate(-90deg) translate(-244px, -36px);
+    transform: rotate(-90deg) translate(-256px, -28px);
 }
 
 /*CUIDA*/
@@ -543,6 +557,7 @@ $color-bird: #00d7f9;
                 width: 120px;
                 border-radius: 100px;
                 animation-play-state: paused;
+                color: white;
         }
     }
 }  
@@ -603,6 +618,8 @@ $color-bird: #00d7f9;
     }
     &__titlebox{
         grid-area: title;
+        display: flex;
+        align-items: center;
     }
     &__textbox{
         grid-area: text;
@@ -627,6 +644,8 @@ $color-bird: #00d7f9;
     }
     &__titlebox{
         grid-area: title;
+        display: flex;
+        align-items: center;
     }
     &__textbox{
         grid-area: text;
@@ -650,6 +669,8 @@ $color-bird: #00d7f9;
     }
     &__titlebox{
         grid-area: title;
+        display: flex;
+        align-items: center;
     }
     &__textbox{
         grid-area: text;
@@ -670,6 +691,8 @@ $color-bird: #00d7f9;
     }
     &__titlebox{
         grid-area: title;
+        display: flex;
+        align-items: center;
     }
     &__textbox{
         grid-area: text;
@@ -684,6 +707,7 @@ $color-bird: #00d7f9;
 
 
 
+/********************MEDIAS****************************/
 @media (max-width: 1024px) {
     /*ADOPTA*/
     .adopta{
