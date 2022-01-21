@@ -979,6 +979,50 @@ $color-mascotas:(
             }
     }
 }
+
+/*******************************NOSOTROS********************************/
+.perro{
+    grid-template-areas: 
+    "icon title img"
+    "text text img"
+    ;
+    grid-template-columns: 60px auto 220px;
+    grid-template-rows: 60px 250px;
+}
+
+.gato{
+    grid-template-areas: 
+    "icon title img"
+    "text text img"
+    ;
+    grid-template-columns: 60px auto 220px;
+    grid-template-rows: 60px 250px;
+}
+
+.pez{
+    grid-template-areas: 
+    "icon title img"
+    "text text img"
+    ;
+    grid-template-columns: 60px auto 220px;
+    grid-template-rows: 60px 250px;
+}
+
+.ave{
+    grid-template-areas: 
+    "icon title img"
+    "text text img"
+    ;
+    grid-template-columns: 60px auto 220px;
+    grid-template-rows: 60px 250px;
+    &__imgbox__img{
+        max-width: 100%;
+        height: auto;
+        object-fit:contain;
+        transform: translateY(-5px);
+    }
+}
+
 /*FOOTER*/
 .footer{
     margin: 50px 0 0 0;

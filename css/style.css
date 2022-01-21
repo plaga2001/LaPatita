@@ -1374,6 +1374,43 @@ h2 {
     -webkit-animation-delay: 4s;
             animation-delay: 4s;
   }
+  /*******************************NOSOTROS********************************/
+  .perro, .gato, .pez, .ave {
+        grid-template-areas: "icon title img" "text text img";
+    -ms-grid-columns: 60px auto 220px;
+        grid-template-columns: 60px auto 220px;
+    -ms-grid-rows: 60px 250px;
+        grid-template-rows: 60px 250px;
+  }
+  .gato {
+        grid-template-areas: "icon title img" "text text img";
+    -ms-grid-columns: 60px auto 220px;
+        grid-template-columns: 60px auto 220px;
+    -ms-grid-rows: 60px 250px;
+        grid-template-rows: 60px 250px;
+  }
+  .pez {
+        grid-template-areas: "icon title img" "text text img";
+    -ms-grid-columns: 60px auto 220px;
+        grid-template-columns: 60px auto 220px;
+    -ms-grid-rows: 60px 250px;
+        grid-template-rows: 60px 250px;
+  }
+  .ave {
+        grid-template-areas: "icon title img" "text text img";
+    -ms-grid-columns: 60px auto 220px;
+        grid-template-columns: 60px auto 220px;
+    -ms-grid-rows: 60px 250px;
+        grid-template-rows: 60px 250px;
+  }
+  .ave__imgbox__img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
   /*FOOTER*/
   .footer {
     margin: 50px 0 0 0;
