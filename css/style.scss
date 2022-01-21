@@ -474,6 +474,7 @@ $color-mascotas:(
         &__card--1{
             grid-area: can;
             background: map-get($map: $color-mascotas, $key: color-dog);
+            transition: all 0.5s linear;
             &:hover{
                 background-image: url(../images/dob--card__wrap.jpg);
                 background-position: center;
@@ -483,6 +484,7 @@ $color-mascotas:(
         &__card--2{
             grid-area:  fel;
             background: map-get($map: $color-mascotas, $key: color-cat);
+            transition: all 0.5s linear;
             &:hover{
                 background-image: url(../images/cat--card__wrap.jpg);
                 background-position: center;
@@ -492,6 +494,7 @@ $color-mascotas:(
         &__card--3{
             grid-area: pez;
             background: map-get($map: $color-mascotas, $key: color-fish);
+            transition: all 0.5s linear;
             &:hover{
                 background-image: url(../images/fish--card__wrap.jpg);
                 background-position: center;
@@ -502,6 +505,7 @@ $color-mascotas:(
             grid-area: ave;
             display: flex;
             background: map-get($map: $color-mascotas, $key: color-bird);
+            transition: all 0.5s linear;
             &:hover{
                 background-image: url(../images/bird--card__wrap.jpg);
                 background-position: center;

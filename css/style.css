@@ -685,6 +685,8 @@ h2 {
   -ms-grid-column: 1;
   grid-area: can;
   background: #f2b53c;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .animalcard__wrap__card--1:hover {
@@ -698,6 +700,8 @@ h2 {
   -ms-grid-column: 2;
   grid-area: fel;
   background: #e61c82;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .animalcard__wrap__card--2:hover {
@@ -712,6 +716,8 @@ h2 {
   -ms-grid-column-span: 2;
   grid-area: pez;
   background: #53d068;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .animalcard__wrap__card--3:hover {
@@ -729,6 +735,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   background: #00d7f9;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .animalcard__wrap__card--4:hover {
