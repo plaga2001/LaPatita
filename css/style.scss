@@ -383,10 +383,12 @@ h2 {
 
 /**************************************************NOSOTROS******************************************************/
 $color-font-general: #20123A;
-$color-dog: #f2b53c;
-$color-cat: #e61c82;
-$color-fish: #53d068;
-$color-bird: #00d7f9;
+$color-mascotas:(
+"color-dog": #f2b53c,
+"color-cat": #e61c82,
+"color-fish": #53d068,
+"color-bird": #00d7f9,
+);
 
 @keyframes circle-move {
     0%{
@@ -471,7 +473,7 @@ $color-bird: #00d7f9;
         cursor: default;
         &__card--1{
             grid-area: can;
-            background: linear-gradient(90deg, #FFB347 0%, #FFCC33 100%);
+            background: map-get($map: $color-mascotas, $key: color-dog);
             &:hover{
                 background-image: url(../images/dob--card__wrap.jpg);
                 background-position: center;
@@ -480,7 +482,7 @@ $color-bird: #00d7f9;
         }
         &__card--2{
             grid-area:  fel;
-            background: linear-gradient(90deg, #BF5AE0 0%, #A811DA 100%);
+            background: map-get($map: $color-mascotas, $key: color-cat);
             &:hover{
                 background-image: url(../images/cat--card__wrap.jpg);
                 background-position: center;
@@ -489,7 +491,7 @@ $color-bird: #00d7f9;
         }
         &__card--3{
             grid-area: pez;
-            background: linear-gradient(90deg, #76B852 0%, #8DC26F 100%);
+            background: map-get($map: $color-mascotas, $key: color-fish);
             &:hover{
                 background-image: url(../images/fish--card__wrap.jpg);
                 background-position: center;
@@ -499,7 +501,7 @@ $color-bird: #00d7f9;
         &__card--4{
             grid-area: ave;
             display: flex;
-            background: linear-gradient(90deg, #02AAB0 0%, #00CDAC 100%);
+            background: map-get($map: $color-mascotas, $key: color-bird);
             &:hover{
                 background-image: url(../images/bird--card__wrap.jpg);
                 background-position: center;
@@ -540,18 +542,18 @@ $color-bird: #00d7f9;
             font-size: 2em;
         }   
         &--1{
-            background-color: $color-dog;
+            background-color: map-get($map: $color-mascotas, $key: color-dog);
         }
         &--2{
-            background-color: $color-cat;
+            background-color: map-get($map: $color-mascotas, $key: color-cat);
             animation-delay: 0.5s;
         }
         &--3{
-            background-color: $color-fish;
+            background-color: map-get($map: $color-mascotas, $key: color-fish);
             animation-delay: 0.3s;
         }
         &--4{
-            background-color: $color-bird;
+            background-color: map-get($map: $color-mascotas, $key: color-bird);
             animation-delay: 0.7s;
         } 
         &:hover{
@@ -613,7 +615,7 @@ $color-bird: #00d7f9;
         justify-content: center;
         align-items: center;
         background-color: white;
-        color: $color-dog;
+        color: map-get($map: $color-mascotas, $key: color-dog);
         width: 60px;
         height: 60px;
         border-radius: 60px;
@@ -642,7 +644,7 @@ $color-bird: #00d7f9;
     background-image: radial-gradient(circle at 50% -20.71%, #fd626d 0, #fb5671 16.67%, #f74a74 33.33%, #f23c78 50%, #ec2d7c 66.67%, #e61c82 83.33%, #de0488 100%);
     &__iconbox{
         @extend .perro__iconbox;
-        color: $color-cat;
+        color: map-get($map: $color-mascotas, $key: color-cat);
     }
     &__titlebox{
         grid-area: title;
@@ -667,7 +669,7 @@ $color-bird: #00d7f9;
     background-image: radial-gradient(circle at 62.28% 119.64%, #82e071 0, #6cd86c 50%, #53d068 100%);
     &__iconbox{
         @extend .perro__iconbox;
-        color: $color-fish;
+        color: map-get($map: $color-mascotas, $key: color-fish);
     }
     &__titlebox{
         grid-area: title;
@@ -689,7 +691,7 @@ $color-bird: #00d7f9;
     background-image: radial-gradient(circle at 90.56% -7.92%, #a5fff4 0, #8bfff3 16.67%, #6bfbf2 33.33%, #3cf2f2 50%, #00e9f3 66.67%, #00e0f5 83.33%, #00d7f9 100%);
     &__iconbox{
         @extend .perro__iconbox;
-        color: $color-bird;
+        color: map-get($map: $color-mascotas, $key: color-bird);
     }
     &__titlebox{
         grid-area: title;
