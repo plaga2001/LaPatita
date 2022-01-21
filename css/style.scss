@@ -637,6 +637,7 @@ $color-mascotas:(
         grid-area: img;
         display: flex;
         justify-content: center;
+        align-items: flex-end;
         &__img{
             transform: translateY(30px);
         }
@@ -775,6 +776,57 @@ $color-mascotas:(
             }
     }
 }
+
+/****************************************NOSOTROS***********************************************/
+.somos{
+    &__textbox{
+        margin: 0 20%;
+    }
+}
+
+.cuida{
+    height: 220px;
+}
+
+.perro{
+    max-width: 90%;
+    grid-template-columns: auto 220px;
+    grid-template-rows: 60px 40px 200px;
+    &__imgbox__img{
+        height: 90%;
+    }
+}
+
+.gato{
+    max-width: 90%;
+    grid-template-columns: auto 220px;
+    grid-template-rows: 60px 40px 200px;
+    &__imgbox__img{
+        height: 90%;
+        transform: translateY(65px);
+    }
+}
+
+.pez{
+    max-width: 90%;
+    grid-template-columns: auto 220px;
+    grid-template-rows: 60px 40px 200px;
+    &__imgbox__img{
+        height: 90%;
+        transform: translateY(65px);
+    }
+}
+
+.ave{
+    max-width: 90%;
+    grid-template-columns: auto 220px;
+    grid-template-rows: 60px 40px 200px;
+    &__imgbox__img{
+        height: 80%;
+        transform: translateY(65px);
+    }
+}
+
 /*FOOTER*/
     .footer{
         margin: 50px 0 0 0;

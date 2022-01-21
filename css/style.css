@@ -935,6 +935,9 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .perro__imgbox__img {
@@ -1138,6 +1141,59 @@ h2 {
             animation: opacity 4s infinite linear;
     -webkit-animation-delay: 4s;
             animation-delay: 4s;
+  }
+  /****************************************NOSOTROS***********************************************/
+  .somos__textbox {
+    margin: 0 20%;
+  }
+  .cuida {
+    height: 220px;
+  }
+  .perro, .gato, .pez, .ave {
+    max-width: 90%;
+    -ms-grid-columns: auto 220px;
+        grid-template-columns: auto 220px;
+    -ms-grid-rows: 60px 40px 200px;
+        grid-template-rows: 60px 40px 200px;
+  }
+  .perro__imgbox__img {
+    height: 90%;
+  }
+  .gato {
+    max-width: 90%;
+    -ms-grid-columns: auto 220px;
+        grid-template-columns: auto 220px;
+    -ms-grid-rows: 60px 40px 200px;
+        grid-template-rows: 60px 40px 200px;
+  }
+  .gato__imgbox__img {
+    height: 90%;
+    -webkit-transform: translateY(65px);
+            transform: translateY(65px);
+  }
+  .pez {
+    max-width: 90%;
+    -ms-grid-columns: auto 220px;
+        grid-template-columns: auto 220px;
+    -ms-grid-rows: 60px 40px 200px;
+        grid-template-rows: 60px 40px 200px;
+  }
+  .pez__imgbox__img {
+    height: 90%;
+    -webkit-transform: translateY(65px);
+            transform: translateY(65px);
+  }
+  .ave {
+    max-width: 90%;
+    -ms-grid-columns: auto 220px;
+        grid-template-columns: auto 220px;
+    -ms-grid-rows: 60px 40px 200px;
+        grid-template-rows: 60px 40px 200px;
+  }
+  .ave__imgbox__img {
+    height: 80%;
+    -webkit-transform: translateY(65px);
+            transform: translateY(65px);
   }
   /*FOOTER*/
   .footer {
