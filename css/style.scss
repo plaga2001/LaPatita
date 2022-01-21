@@ -419,7 +419,7 @@ $color-bird: #00d7f9;
 }
 
 /*header*/
-.header{
+.headernos{
     height: 200px;
     background: linear-gradient(-45deg, #f0c750, #fd626d, #23a6d5, #7add6f);
     background-size: 400% 400%;
@@ -565,7 +565,7 @@ $color-bird: #00d7f9;
 }  
 
 /*SUBHEADER*/
-.subheader{
+.subheader-nos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -836,9 +836,9 @@ $color-bird: #00d7f9;
     .cards{
         display: grid;
         grid-template-areas: 
-        "card-1"
-        "card-2" 
-        "card-3"
+        "card1"
+        "card2" 
+        "card3"
         ;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 80px);

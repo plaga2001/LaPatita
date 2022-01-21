@@ -177,6 +177,7 @@ body {
   font-family: "Mitr", sans-serif;
 }
 
+/*Titles Reset (   Boostrap >:(   )*/
 h1 {
   display: block;
   font-size: 2em;
@@ -543,7 +544,7 @@ h2 {
   margin: 20px;
 }
 
-/************************NOSOTROS**************************/
+/**************************************************NOSOTROS******************************************************/
 @-webkit-keyframes circle-move {
   0% {
     -webkit-transform: translateY(0);
@@ -606,7 +607,7 @@ h2 {
 }
 
 /*header*/
-.header {
+.headernos {
   height: 200px;
   background: linear-gradient(-45deg, #f0c750, #fd626d, #23a6d5, #7add6f);
   background-size: 400% 400%;
@@ -623,7 +624,7 @@ h2 {
           align-items: center;
 }
 
-.header__titlebox {
+.headernos__titlebox {
   font-size: 1.5em;
   color: white;
 }
@@ -824,7 +825,7 @@ h2 {
 }
 
 /*SUBHEADER*/
-.subheader {
+.subheader-nos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,7 +843,7 @@ h2 {
   background-attachment: fixed;
 }
 
-.subheader__titlebox {
+.subheader-nos__titlebox {
   font-size: 2em;
   color: white;
 }
@@ -1059,7 +1060,7 @@ h2 {
           justify-content: center;
 }
 
-/********************MEDIAS****************************/
+/***************************************************MEDIAS*****************************************************/
 @media (max-width: 1024px) {
   /*ADOPTA*/
   .adopta__textbox {
@@ -1218,7 +1219,7 @@ h2 {
   .cards {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "card-1" "card-2"  "card-3";
+        grid-template-areas: "card1" "card2"  "card3";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: (80px)[3];
