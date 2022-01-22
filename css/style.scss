@@ -582,7 +582,7 @@ $color-mascotas:(
     background-repeat: no-repeat;
     background-attachment: fixed;
     &__titlebox{
-        font-size: 2em;
+        font-size: 1.5em;
         color: white;
     }
 }
@@ -981,6 +981,34 @@ $color-mascotas:(
 }
 
 /*******************************NOSOTROS********************************/
+.headernos{
+    &__titlebox{
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+
+.somos{
+    &__textbox{
+        margin: 0 10%;
+    }
+}
+
+.animalcard{
+    &__wrap{
+        grid-template-areas: 
+        "can fel ave"
+        "pez pez ave"
+        ;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(2, 150px);
+    }
+}
+
+.cuida{
+    height: 260px;
+}
+
 .perro{
     grid-template-areas: 
     "icon title img"
@@ -1014,7 +1042,7 @@ $color-mascotas:(
     "text text img"
     ;
     grid-template-columns: 60px auto 220px;
-    grid-template-rows: 60px 250px;
+    grid-template-rows: 60px auto;
     &__imgbox__img{
         max-width: 100%;
         height: auto;
@@ -1064,6 +1092,7 @@ $color-mascotas:(
         }
     }
 }
+}
 
 @media (max-width:480px) {
     .adopta{
@@ -1094,7 +1123,74 @@ $color-mascotas:(
             }
         }
     }
+
+/*****************************NOSOTROS*******************************/
+.animalcard{
+    &__wrap{
+        grid-template-areas: 
+        "ave can"
+        "ave fel"
+        "pez pez"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 150px);
+    }
 }
+
+.cuida{
+    &__circlebox{
+        animation: none;
+    }
+}
+
+.perro{
+    grid-template-areas: 
+    "icon title"
+    "text text"
+    ;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 60px auto;
+    &__imgbox{
+        display: none;
+    }
+}
+
+.gato{
+    grid-template-areas: 
+    "icon title"
+    "text text"
+    ;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 60px auto;
+    &__imgbox{
+        display: none;
+    }
+}
+
+.pez{
+    grid-template-areas: 
+    "icon title"
+    "text text"
+    ;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 60px auto;
+    &__imgbox{
+        display: none;
+    }
+}
+
+.ave{
+    grid-template-areas: 
+    "icon title"
+    "text text"
+    ;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 60px auto;
+    &__imgbox{
+        display: none;
+    }
+}
+
 .footer{
     &__wrap{
         padding: 20px 5px; 
