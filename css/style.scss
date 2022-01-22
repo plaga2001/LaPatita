@@ -107,7 +107,7 @@ $font-color-footer: #4a2986;
     font-family: $font-general;
 } 
 
-a{
+a, a:hover{
     color: #ffffff;
     text-decoration: none;
 }
@@ -347,37 +347,27 @@ h2 {
 }
 
 .footer{
-    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: auto;
     background-color: #000000;
-    font-size: 1.2em;
-    &__wrap{
-        padding: 5%;
-        display: grid;
-        grid-template-areas: 
-        "redes text-1 text-2";
-        grid-template-rows: 3fr;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 15%;
-        color: white;
-        &__redes{
-            grid-area: redes;
-            margin-top: 20px;
-            &__icons{
-                display: flex;
-                justify-content: space-around;
-            }
+    margin-top: 40px;
+    color: white;
+    flex-wrap: wrap;
+    &__redes{
+        &__title{
+            font-size: 0.1em;
         }
-        &__text--1{
-            grid-area: text-1;
-            text-align: center;
+        &__iconbox{
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.3em;
         }
-        &__text--2{
-            grid-area: text-2;
-            text-align: center;
-        }
-        &__text__p{
-            margin: 20px;
-        }
+    }
+    &__logo{
+        font-size: 1.5em;
     }
 }
 
@@ -826,49 +816,6 @@ $color-mascotas:(
         transform: translateY(65px);
     }
 }
-
-/*FOOTER*/
-    .footer{
-        margin: 50px 0 0 0;
-        background-color: #000000;
-        font-size: 1.2em;
-        &__wrap{
-            padding: 5%;
-            display: grid;
-            grid-template-areas: 
-            "redes"
-            "text-1" 
-            "text-2";
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: 1fr;
-            column-gap: 15px;
-            color: white;
-            row-gap: 20px;
-            &__redes{
-                text-align: center;
-                grid-area: redes;
-                margin: 0 10%;
-                &__icons{
-                    display: flex;
-                    justify-content: space-evenly;  
-                    margin-top: 50px;
-                }
-            }
-            &__text--1{
-                grid-area: text-1;
-                text-align: center;
-                margin: 0 10%;
-            }
-            &__text--2{
-                grid-area: text-2;
-                text-align: center;
-                margin: 0 10%;
-            }
-            &__text__p{
-                margin: 20px;
-            }
-        }
-    }
 }
 
 @media (max-width:768px) {
@@ -1050,48 +997,6 @@ $color-mascotas:(
         transform: translateY(-5px);
     }
 }
-
-/*FOOTER*/
-.footer{
-    margin: 50px 0 0 0;
-    background-color: #000000;
-    font-size: 1.2em;
-    &__wrap{
-        padding: 5%;
-        display: grid;
-        grid-template-areas: 
-        "redes"
-        "text-1" 
-        "text-2";
-        grid-template-rows: 150px repeat(2, 1fr);
-        grid-template-columns: 1fr;
-        column-gap: 15px;
-        color: white;
-        &__redes{
-            text-align: center;
-            grid-area: redes;
-            margin: 0 10%;
-            &__icons{
-                display: flex;
-                justify-content: space-evenly;  
-                margin-top: 50px;
-            }
-        }
-        &__text--1{
-            grid-area: text-1;
-            text-align: center;
-            margin: 0 10%;
-        }
-        &__text--2{
-            grid-area: text-2;
-            text-align: center;
-            margin: 0 10%;
-        }
-        &__text__p{
-            margin: 20px;
-        }
-    }
-}
 }
 
 @media (max-width:480px) {
@@ -1188,18 +1093,6 @@ $color-mascotas:(
     grid-template-rows: 60px auto;
     &__imgbox{
         display: none;
-    }
-}
-
-.footer{
-    &__wrap{
-        padding: 20px 5px; 
-        &__text--1{
-            margin: 0 10px;
-        }
-        &__text--2{
-            margin: 0 10px;
-        }
     }
 }
 }
