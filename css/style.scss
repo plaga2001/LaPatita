@@ -411,7 +411,7 @@ $color-mascotas:(
 }
 
 /*header*/
-.headernos{
+.header--colorized{
     height: 200px;
     background: linear-gradient(-45deg, #f0c750, #fd626d, #23a6d5, #7add6f);
     background-size: 400% 400%;
@@ -419,6 +419,7 @@ $color-mascotas:(
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     &__titlebox{
         font-size: 1.5em;
         color: white;
@@ -703,7 +704,27 @@ $color-mascotas:(
     }
 }
 
-
+/***************************************************GALERIA****************************************************/
+.galeria{
+    margin-top: 10px;
+    &__galerybox{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        &__imgbox{
+            height: auto;
+            max-width: 320px;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.1s linear;
+            &:hover{
+                box-shadow: 0px 0px 80px 17px rgba(105,104,104,0.75);
+                transform: scale(1.009);
+            }
+        }
+    }
+}
 
 
 /***************************************************MEDIAS*****************************************************/
@@ -928,12 +949,6 @@ $color-mascotas:(
 }
 
 /*******************************NOSOTROS********************************/
-.headernos{
-    &__titlebox{
-        text-align: center;
-        font-size: 1.5em;
-    }
-}
 
 .somos{
     &__textbox{

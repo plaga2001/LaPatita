@@ -590,7 +590,7 @@ h2 {
 }
 
 /*header*/
-.headernos {
+.header--colorized {
   height: 200px;
   background: linear-gradient(-45deg, #f0c750, #fd626d, #23a6d5, #7add6f);
   background-size: 400% 400%;
@@ -605,9 +605,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
-.headernos__titlebox {
+.header--colorized__titlebox {
   font-size: 1.5em;
   color: white;
 }
@@ -1050,6 +1051,39 @@ h2 {
           justify-content: center;
 }
 
+/***************************************************GALERIA****************************************************/
+.galeria {
+  margin-top: 10px;
+}
+
+.galeria__galerybox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.galeria__galerybox__imgbox {
+  height: auto;
+  max-width: 320px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.galeria__galerybox__imgbox:hover {
+  -webkit-box-shadow: 0px 0px 80px 17px rgba(105, 104, 104, 0.75);
+          box-shadow: 0px 0px 80px 17px rgba(105, 104, 104, 0.75);
+  -webkit-transform: scale(1.009);
+          transform: scale(1.009);
+}
+
 /***************************************************MEDIAS*****************************************************/
 @media (max-width: 1024px) {
   /*ADOPTA*/
@@ -1305,10 +1339,6 @@ h2 {
             animation-delay: 4s;
   }
   /*******************************NOSOTROS********************************/
-  .headernos__titlebox {
-    text-align: center;
-    font-size: 1.5em;
-  }
   .somos__textbox {
     margin: 0 10%;
   }
