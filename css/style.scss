@@ -85,6 +85,12 @@ $font-special: 'Varela Round', sans-serif;
 $font-color-general: #20123A;
 $font-color-colorized: #A560B6;
 $font-color-footer: #4a2986;
+$color-mascotas:(
+"color-dog": #f2b53c,
+"color-cat": #e61c82,
+"color-fish": #00d7f9,
+"color-bird": #53d068,
+);
 
 /*Test*/
 
@@ -102,7 +108,7 @@ $font-color-footer: #4a2986;
 
 *{
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 0;
     box-sizing: border-box;
     font-family: $font-general;
 } 
@@ -125,7 +131,7 @@ body{
 }
 
 
-/*Titles Reset (   Boostrap >:(   )*/
+/*Titles/p Reset (   Boostrap >:(   )*/
 h1{
     display: block;
     font-size: 2em;
@@ -133,11 +139,15 @@ h1{
     font-weight: bold;
 }
 
-h2 {
+h2, h3, h4 {
     display: block;
     font-size: 1.5em;
     margin: 0;
     font-weight: bold;
+}
+
+p{
+    margin: 0;
 }
 
 /*HEADER*/
@@ -366,13 +376,6 @@ h2 {
 }
 
 /**************************************************NOSOTROS******************************************************/
-$color-font-general: #20123A;
-$color-mascotas:(
-"color-dog": #f2b53c,
-"color-cat": #e61c82,
-"color-fish": #53d068,
-"color-bird": #00d7f9,
-);
 
 @keyframes circle-move {
     0%{
@@ -425,14 +428,14 @@ $color-mascotas:(
     display: flex;
     justify-content: center;
     margin: 20px 0;
-    color: $color-font-general;
+    color: $font-color-general;
     &__textbox{
         text-align: center;
         margin: 0 35%;
         font-size: 1.2em;
         &__hr{
             height: 5px;
-            background-color: $color-font-general;
+            background-color: $font-color-general;
             border: 0;
             margin: 10px 0;
         }
@@ -567,11 +570,10 @@ $color-mascotas:(
     background-repeat: no-repeat;
     background-attachment: fixed;
     &__titlebox{
-        font-size: 1.5em;
+        font-size: 1.6em;
         color: white;
     }
 }
-
 
 /*MASCOTAS*/
 .mascotas{
@@ -656,7 +658,7 @@ $color-mascotas:(
 
 .pez{
     @extend .perro;
-    background-image: radial-gradient(circle at 62.28% 119.64%, #82e071 0, #6cd86c 50%, #53d068 100%);
+    background-image: radial-gradient(circle at 90.56% -7.92%, #a5fff4 0, #8bfff3 16.67%, #6bfbf2 33.33%, #3cf2f2 50%, #00e9f3 66.67%, #00e0f5 83.33%, #00d7f9 100%);
     &__iconbox{
         @extend .perro__iconbox;
         color: map-get($map: $color-mascotas, $key: color-fish);
@@ -678,7 +680,7 @@ $color-mascotas:(
 
 .ave{
     @extend .perro;
-    background-image: radial-gradient(circle at 90.56% -7.92%, #a5fff4 0, #8bfff3 16.67%, #6bfbf2 33.33%, #3cf2f2 50%, #00e9f3 66.67%, #00e0f5 83.33%, #00d7f9 100%);
+    background-image: radial-gradient(circle at 62.28% 119.64%, #82e071 0, #6cd86c 50%, #53d068 100%);
     &__iconbox{
         @extend .perro__iconbox;
         color: map-get($map: $color-mascotas, $key: color-bird);
@@ -703,7 +705,7 @@ $color-mascotas:(
     margin: 20px 0;
     &__textbox{
         font-size: 1.3em;
-        color: $color-font-general;
+        color: $font-color-general;
         margin: 0 10px;
     }
     &__titlebox{
@@ -734,6 +736,91 @@ $color-mascotas:(
         }
     }
 }
+
+.subheader--galeria{
+    @extend .subheader-nos;
+    background-image: url(../images/subheader--galeria.jpg);
+    text-align: center;
+    &__titlebox{
+        color: white;
+        font-size: 1.6em;
+    }
+}
+
+.ventaja{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: white;
+    margin: 20px 0;
+    &__card{
+        background-color: map-get($map: $color-mascotas, $key: color-dog);
+        text-align: center; 
+        width: 250px;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 10px;
+        transition: all 0.2s linear;
+        &__titlebox{
+            margin: 10px 0;
+        }
+        &__textbox{
+            font-size: 1.1em;
+            margin: 0;
+        }
+        &__iconbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__flex{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                color: map-get($map: $color-mascotas, $key: color-dog);
+                width: 50px;
+                height: 50px;
+                font-size: 1.5em;
+                border-radius: 60px;
+                &--2{
+                    color: map-get($map: $color-mascotas, $key: color-cat);
+                }
+                &--3{
+                    color: map-get($map: $color-mascotas, $key: color-fish);
+                }
+                &--4{
+                    color: map-get($map: $color-mascotas, $key: color-bird);
+                }
+            }
+        }
+        &:hover{
+            transform: scale(1.009);
+            box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0,0,0,0);
+        }
+        &--2{
+            background-color: map-get($map: $color-mascotas, $key: color-cat);
+            &:hover{
+                transform: scale(1.009);
+                box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0,0,0,0);
+            }
+        }
+        &--3{
+            background-color: map-get($map: $color-mascotas, $key: color-fish);
+            &:hover{
+                transform: scale(1.009);
+                box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0,0,0,0);
+            }
+        }
+        &--4{
+            background-color: map-get($map: $color-mascotas, $key: color-bird);
+            &:hover{
+                transform: scale(1.009);
+                box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0,0,0,0);
+            }
+        }
+    }
+}
+/**/
 
 /***************************************************MEDIAS*****************************************************/
 @media (max-width: 1024px) {
@@ -1020,6 +1107,13 @@ $color-mascotas:(
         transform: translateY(-5px);
     }
 }
+
+/********************************GALERIA*******************************/
+.frase{
+    &__titlebox{
+        margin: 0 10%;
+    }
+}
 }
 
 @media (max-width:480px) {
@@ -1116,6 +1210,14 @@ $color-mascotas:(
     grid-template-rows: 60px auto;
     &__imgbox{
         display: none;
+    }
+}
+
+/*****************************GALERIA***************************/
+.frase{
+    &__titlebox{
+        margin: 0 5px;
+        font-size: 1.5em;
     }
 }
 }

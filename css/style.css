@@ -155,7 +155,7 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Mitr", sans-serif;
@@ -177,7 +177,7 @@ body {
   font-family: "Mitr", sans-serif;
 }
 
-/*Titles Reset (   Boostrap >:(   )*/
+/*Titles/p Reset (   Boostrap >:(   )*/
 h1 {
   display: block;
   font-size: 2em;
@@ -185,11 +185,15 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+h2, h3, h4 {
   display: block;
   font-size: 1.5em;
   margin: 0;
   font-weight: bold;
+}
+
+p {
+  margin: 0;
 }
 
 /*HEADER*/
@@ -691,7 +695,7 @@ h2 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: pez;
-  background: #53d068;
+  background: #00d7f9;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
@@ -710,7 +714,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #00d7f9;
+  background: #53d068;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
@@ -784,13 +788,13 @@ h2 {
 }
 
 .cuida__circlebox--3 {
-  background-color: #53d068;
+  background-color: #00d7f9;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
 .cuida__circlebox--4 {
-  background-color: #00d7f9;
+  background-color: #53d068;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
@@ -805,7 +809,7 @@ h2 {
 }
 
 /*SUBHEADER*/
-.subheader-nos {
+.subheader-nos, .subheader--galeria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,7 +828,7 @@ h2 {
 }
 
 .subheader-nos__titlebox {
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: white;
 }
 
@@ -966,11 +970,11 @@ h2 {
 }
 
 .pez {
-  background-image: radial-gradient(circle at 62.28% 119.64%, #82e071 0, #6cd86c 50%, #53d068 100%);
+  background-image: radial-gradient(circle at 90.56% -7.92%, #a5fff4 0, #8bfff3 16.67%, #6bfbf2 33.33%, #3cf2f2 50%, #00e9f3 66.67%, #00e0f5 83.33%, #00d7f9 100%);
 }
 
 .pez__iconbox {
-  color: #53d068;
+  color: #00d7f9;
 }
 
 .pez__titlebox {
@@ -1005,11 +1009,11 @@ h2 {
 }
 
 .ave {
-  background-image: radial-gradient(circle at 90.56% -7.92%, #a5fff4 0, #8bfff3 16.67%, #6bfbf2 33.33%, #3cf2f2 50%, #00e9f3 66.67%, #00e0f5 83.33%, #00d7f9 100%);
+  background-image: radial-gradient(circle at 62.28% 119.64%, #82e071 0, #6cd86c 50%, #53d068 100%);
 }
 
 .ave__iconbox {
-  color: #00d7f9;
+  color: #53d068;
 }
 
 .ave__titlebox {
@@ -1093,6 +1097,132 @@ h2 {
           transform: scale(1.009);
 }
 
+.subheader--galeria {
+  background-image: url(../images/subheader--galeria.jpg);
+  text-align: center;
+}
+
+.subheader--galeria__titlebox {
+  color: white;
+  font-size: 1.6em;
+}
+
+.ventaja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  margin: 20px 0;
+}
+
+.ventaja__card {
+  background-color: #f2b53c;
+  text-align: center;
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.ventaja__card__titlebox {
+  margin: 10px 0;
+}
+
+.ventaja__card__textbox {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.ventaja__card__iconbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ventaja__card__iconbox__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: #f2b53c;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+  border-radius: 60px;
+}
+
+.ventaja__card__iconbox__flex--2 {
+  color: #e61c82;
+}
+
+.ventaja__card__iconbox__flex--3 {
+  color: #00d7f9;
+}
+
+.ventaja__card__iconbox__flex--4 {
+  color: #53d068;
+}
+
+.ventaja__card:hover {
+  -webkit-transform: scale(1.009);
+          transform: scale(1.009);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
+          box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
+}
+
+.ventaja__card--2 {
+  background-color: #e61c82;
+}
+
+.ventaja__card--2:hover {
+  -webkit-transform: scale(1.009);
+          transform: scale(1.009);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
+          box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
+}
+
+.ventaja__card--3 {
+  background-color: #00d7f9;
+}
+
+.ventaja__card--3:hover {
+  -webkit-transform: scale(1.009);
+          transform: scale(1.009);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
+          box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
+}
+
+.ventaja__card--4 {
+  background-color: #53d068;
+}
+
+.ventaja__card--4:hover {
+  -webkit-transform: scale(1.009);
+          transform: scale(1.009);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
+          box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
+}
+
+/**/
 /***************************************************MEDIAS*****************************************************/
 @media (max-width: 1024px) {
   /*ADOPTA*/
@@ -1397,6 +1527,10 @@ h2 {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
   }
+  /********************************GALERIA*******************************/
+  .frase__titlebox {
+    margin: 0 10%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1479,6 +1613,11 @@ h2 {
   }
   .ave__imgbox {
     display: none;
+  }
+  /*****************************GALERIA***************************/
+  .frase__titlebox {
+    margin: 0 5px;
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
