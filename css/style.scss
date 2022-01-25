@@ -356,15 +356,9 @@ h2 {
     margin-top: 40px;
     color: white;
     flex-wrap: wrap;
-    &__redes{
-        &__title{
-            font-size: 0.1em;
-        }
-        &__iconbox{
-            display: flex;
-            justify-content: space-around;
-            font-size: 1.3em;
-        }
+    &__ubi__list{
+        list-style: none;
+        font-size: 1.2em;
     }
     &__logo{
         font-size: 1.5em;
@@ -705,6 +699,21 @@ $color-mascotas:(
 }
 
 /***************************************************GALERIA****************************************************/
+.frase{
+    margin: 20px 0;
+    &__textbox{
+        font-size: 1.3em;
+        color: $color-font-general;
+        margin: 0 10px;
+    }
+    &__titlebox{
+        font-size: 2em;
+        color: $font-color-colorized;
+        text-align: center;
+        margin:0 20%;
+    }
+}
+
 .galeria{
     margin-top: 10px;
     &__galerybox{
@@ -725,7 +734,6 @@ $color-mascotas:(
         }
     }
 }
-
 
 /***************************************************MEDIAS*****************************************************/
 @media (max-width: 1024px) {

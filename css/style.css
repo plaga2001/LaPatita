@@ -510,17 +510,9 @@ h2 {
       flex-wrap: wrap;
 }
 
-.footer__redes__title {
-  font-size: 0.1em;
-}
-
-.footer__redes__iconbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-size: 1.3em;
+.footer__ubi__list {
+  list-style: none;
+  font-size: 1.2em;
 }
 
 .footer__logo {
@@ -1052,6 +1044,23 @@ h2 {
 }
 
 /***************************************************GALERIA****************************************************/
+.frase {
+  margin: 20px 0;
+}
+
+.frase__textbox {
+  font-size: 1.3em;
+  color: #20123A;
+  margin: 0 10px;
+}
+
+.frase__titlebox {
+  font-size: 2em;
+  color: #A560B6;
+  text-align: center;
+  margin: 0 20%;
+}
+
 .galeria {
   margin-top: 10px;
 }
