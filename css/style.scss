@@ -858,6 +858,216 @@ p{
     }
 }
 
+/***************************************************TIENDA*****************************************************/
+
+.articuloswrap{
+    margin: 10px 0;
+    &__articulosbox{
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        &__card{
+            height: 450px;
+            width: 320px;
+            margin: 10px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            &--1{
+                background-image: url(https://m.media-amazon.com/images/I/71YR+x76NsL._AC_SX466_.jpg);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Rascafor gato-Cactus $1100";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(255, 179, 71, 0.8) 0%, rgba(255, 204, 51, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            }
+            &--2{
+                background-image: url(https://images-na.ssl-images-amazon.com/images/I/71Ci4P06bGL._SY450_.jpg);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Juguete para Perro $260";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(191, 90, 224, 0.8) 0%, rgba(168, 17, 218, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            }   
+            &--3{
+                background-image: url(https://images.jumpseller.com/store/pedro-s-emporio-outdoor/7442642/zee_dog_toy_rob_the_microbe_main-3.jpg?1603563715);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Juguete Comedero $750";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(118, 184, 82, 0.8) 0%, rgba(141, 194, 111, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            }   
+            &--4{
+                background-image: url(https://images-na.ssl-images-amazon.com/images/I/71GqNgW7ArL._AC._SR360,460.jpg);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Collar y Correa-Perro $750";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(255, 179, 71, 0.8) 0%, rgba(255, 204, 51, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            }
+            &--5{
+                background-image: url(https://traviesospetshop.com.ar/wp-content/uploads/2019/11/advocate-perro-4-a-10.png);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Pipeta para Perro $600";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(191, 90, 224, 0.8) 0%, rgba(168, 17, 218, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            }   
+            &--6{
+                background-image: url(https://www.hipermania.com.ar/wp-content/uploads/2021/09/piedras.jpg);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Piedras para Gato $350";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(118, 184, 82, 0.8) 0%, rgba(141, 194, 111, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            }   
+            &--7{
+                background-image: url(https://http2.mlstatic.com/D_NQ_NP_639079-MLA43399165031_092020-O.jpg);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Piedras para Gato Ranch-$850";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(255, 179, 71, 0.8) 0%, rgba(255, 204, 51, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            }
+            &--8{
+                background-image: url(https://casacolom.net/wp-content/uploads/2019/03/Tetra-Pond-Sticks.jpg);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Comida de Pez TETRA $320";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(191, 90, 224, 0.8) 0%, rgba(168, 17, 218, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            } 
+            &--9{
+                background-image: url(https://jumboargentina.vteximg.com.br/arquivos/ids/586407-750-750/Alimento-Para-Perros-Pedigree-Cachorros-85-Gr-1-21835.jpg?v=637265784183170000);
+                background-position: center;
+                background-size: cover;
+                &:after{
+                    content: "Pedigree Cachorro $1200";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-items: center;
+                    text-align: center ;
+                    font-size: 1.7em;
+                    position: absolute;
+                    background: linear-gradient(90deg, rgba(118, 184, 82, 0.8) 0%, rgba(141, 194, 111, 0.8) 100%);
+                    transform: translateY(100%);
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover::after{
+                    transform: translateY(0);
+                }
+            }   
+        }
+    }
+}
+
 /***************************************************MEDIAS*****************************************************/
 @media (max-width: 1024px) {
     /*ADOPTA*/
