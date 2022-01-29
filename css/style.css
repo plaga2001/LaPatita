@@ -1441,6 +1441,108 @@ p {
   border-radius: 50px;
 }
 
+.purinapro {
+  background-color: #000000;
+  height: auto;
+}
+
+.purinapro__header {
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 30px;
+}
+
+.purinapro__subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 15px;
+  background-color: red;
+}
+
+.purinapro__subheader__imagebox__img {
+  vertical-align: top;
+}
+
+.purinapro__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.purinapro__productos__productosbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.purinapro__productos__productosbox__card {
+  height: 230px;
+  width: 180px;
+  border-radius: 20px;
+  margin: 10px 10px;
+  background-color: white;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.purinapro__productos__productosbox__card__imgbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.purinapro__productos__productosbox__card__textbox {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.purinapro__productos__productosbox__card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translatey(1px);
+          transform: translatey(1px);
+}
+
+.purinapro__productos__productosbox__card:hover {
+  height: 275px;
+}
+
 /***************************************************MEDIAS*****************************************************/
 @media (max-width: 1024px) {
   /*ADOPTA*/
