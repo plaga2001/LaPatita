@@ -981,6 +981,7 @@ p{
     &__header{
         display: flex;
         align-items: center;
+        justify-content: center;
         background-image: url(https://images.unsplash.com/photo-1542428854-992760d1895a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
         background-size: cover;
         background-position: center;
@@ -1008,13 +1009,14 @@ p{
         }
         &--4{
             background-image: url(https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+            color: map-get($map: $color-mascotas, $key: color-bird);
         }
     }
     &__productosbox{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin: 10px 0;
+        margin: 10px;
         height: auto;
         color: white;
         &__card{
@@ -1039,6 +1041,15 @@ p{
                 text-align: center;
                 margin-top: 20px;
                 font-size: 1.2em;
+            }
+            &--2{
+                background-color: map-get($map: $color-mascotas, $key: color-cat);
+            }
+            &--3{
+                background-color: map-get($map: $color-mascotas, $key: color-fish);
+            }
+            &--4{
+                background-color: map-get($map: $color-mascotas, $key: color-bird);
             }
         }
     }
