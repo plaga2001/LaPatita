@@ -1323,7 +1323,6 @@ p {
   height: 150px;
   width: 230px;
   border-radius: 15px;
-  overflow: hidden;
   -webkit-transition: background-image, -webkit-transform 0.3s ease;
   transition: background-image, -webkit-transform 0.3s ease;
   transition: background-image, transform 0.3s ease;
@@ -1347,6 +1346,21 @@ p {
   margin: 5px;
   font-size: 2em;
   background-color: white;
+  border: solid 5px #f2b53c;
+  -webkit-transform: translate(-30px, 20px);
+          transform: translate(-30px, 20px);
+}
+
+.mascotastienda__mascotasbox__card__iconbox--2 {
+  border: solid 5px #e61c82;
+}
+
+.mascotastienda__mascotasbox__card__iconbox--3 {
+  border: solid 5px #00d7f9;
+}
+
+.mascotastienda__mascotasbox__card__iconbox--4 {
+  border: solid 5px #53d068;
 }
 
 .mascotastienda__mascotasbox__card--1 {
@@ -1547,7 +1561,7 @@ p {
 
 .dogproductos__productosbox__card__textbox {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: 1.2em;
 }
 
@@ -1561,6 +1575,26 @@ p {
 
 .dogproductos__productosbox__card--4 {
   background-color: #53d068;
+}
+
+.dogproductos__productosbox__card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.dogproductos__productosbox__card a {
+  color: white;
+}
+
+.dogproductos__productosbox__card a:hover {
+  color: inherit;
+  background-color: #4a2986;
 }
 
 .purinapro {
@@ -1793,6 +1827,17 @@ p {
     -webkit-transform: translateY(65px);
             transform: translateY(65px);
   }
+  /***********************************************TIENDA**********************************************/
+  .header--tienda {
+    height: 350px;
+  }
+  .mascotastienda__mascotasbox__card {
+    height: 110px;
+    width: 150px;
+  }
+  .medios__card--3 {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1973,6 +2018,37 @@ p {
   .frase__titlebox {
     margin: 0 10%;
   }
+  /********************************TIENDA***********************************/
+  .header--tienda {
+    height: 250px;
+  }
+  .mascotastienda {
+    margin: 10px 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .mascotastienda__mascotasbox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mascotastienda__mascotasbox__card {
+    margin: 10px;
+    width: 110px;
+    height: 80px;
+  }
+  .mascotastienda__mascotasbox__card__iconbox {
+    -webkit-transform: translate(-20px, 15px);
+            transform: translate(-20px, 15px);
+    height: 45px;
+    width: 45px;
+    font-size: 1.2em;
+  }
+  .medios {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2060,6 +2136,27 @@ p {
   .frase__titlebox {
     margin: 0 5px;
     font-size: 1.5em;
+  }
+  /*****************************TIENDA**************************************/
+  .mascotastienda__mascotasbox__card {
+    max-width: 180px;
+    min-width: 130px;
+    height: 80px;
+  }
+  .dogproductos__productosbox__card {
+    width: 90%;
+    height: 360px;
+    pointer-events: none;
+  }
+  .dogproductos__productosbox__card__textbox {
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+  .dogproductos__productosbox__card__imgbox {
+    height: 60%;
+  }
+  .dogproductos__productosbox__card__btn {
+    pointer-events: all;
   }
 }
 /*# sourceMappingURL=style.css.map */

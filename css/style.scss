@@ -888,7 +888,7 @@ p{
             height: 150px;
             width: 230px;
             border-radius: 15px;
-            overflow: hidden;
+            // overflow: hidden;
             transition: background-image, transform 0.3s ease; 
             margin-bottom: 10px;
             &__iconbox{
@@ -901,6 +901,17 @@ p{
                 margin: 5px;
                 font-size: 2em;
                 background-color: white;
+                border: solid 5px map-get($map: $color-mascotas, $key: color-dog);
+                transform: translate(-30px, 20px);
+                &--2{
+                    border: solid 5px map-get($map: $color-mascotas, $key: color-cat);
+                }
+                &--3{
+                    border: solid 5px map-get($map: $color-mascotas, $key: color-fish);
+                }
+                &--4{
+                    border: solid 5px map-get($map: $color-mascotas, $key: color-bird);
+                }
             }
             &--1{
                 background-color: map-get($map: $color-mascotas, $key: color-dog);
@@ -1039,7 +1050,7 @@ p{
             }
             &__textbox{
                 text-align: center;
-                margin-top: 20px;
+                margin-top: 5px;
                 font-size: 1.2em;
             }
             &--2{
@@ -1050,6 +1061,18 @@ p{
             }
             &--4{
                 background-color: map-get($map: $color-mascotas, $key: color-bird);
+            }
+            &__btn{
+                display: flex;
+                justify-content: center;
+                transform: translateY(10px);
+            }
+            & a{
+                color: white;
+                &:hover{
+                    color: inherit;
+                    background-color: $font-color-footer;
+                }
             }
         }
     }
@@ -1178,54 +1201,76 @@ p{
 }
 
 /****************************************NOSOTROS***********************************************/
-.somos{
-    &__textbox{
-        margin: 0 20%;
+    .somos{
+        &__textbox{
+            margin: 0 20%;
+        }
     }
-}
 
-.cuida{
-    height: 220px;
-}
-
-.perro{
-    max-width: 90%;
-    grid-template-columns: auto 220px;
-    grid-template-rows: 60px 40px 200px;
-    &__imgbox__img{
-        height: 90%;
+    .cuida{
+        height: 220px;
     }
-}
 
-.gato{
-    max-width: 90%;
-    grid-template-columns: auto 220px;
-    grid-template-rows: 60px 40px 200px;
-    &__imgbox__img{
-        height: 90%;
-        transform: translateY(65px);
+    .perro{
+        max-width: 90%;
+        grid-template-columns: auto 220px;
+        grid-template-rows: 60px 40px 200px;
+        &__imgbox__img{
+            height: 90%;
+        }
     }
-}
 
-.pez{
-    max-width: 90%;
-    grid-template-columns: auto 220px;
-    grid-template-rows: 60px 40px 200px;
-    &__imgbox__img{
-        height: 90%;
-        transform: translateY(65px);
+    .gato{
+        max-width: 90%;
+        grid-template-columns: auto 220px;
+        grid-template-rows: 60px 40px 200px;
+        &__imgbox__img{
+            height: 90%;
+            transform: translateY(65px);
+        }
     }
-}
 
-.ave{
-    max-width: 90%;
-    grid-template-columns: auto 220px;
-    grid-template-rows: 60px 40px 200px;
-    &__imgbox__img{
-        height: 80%;
-        transform: translateY(65px);
+    .pez{
+        max-width: 90%;
+        grid-template-columns: auto 220px;
+        grid-template-rows: 60px 40px 200px;
+        &__imgbox__img{
+            height: 90%;
+            transform: translateY(65px);
+        }
     }
-}
+
+    .ave{
+        max-width: 90%;
+        grid-template-columns: auto 220px;
+        grid-template-rows: 60px 40px 200px;
+        &__imgbox__img{
+            height: 80%;
+            transform: translateY(65px);
+        }
+    }
+
+/***********************************************TIENDA**********************************************/
+    .header--tienda{
+        height: 350px;
+    }    
+
+    .mascotastienda{
+        &__mascotasbox{
+            &__card{
+                height: 110px;
+                width: 150px;
+            }
+        }
+    }
+
+    .medios{
+        &__card{
+            &--3{
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -1408,6 +1453,35 @@ p{
         margin: 0 10%;
     }
 }
+
+/********************************TIENDA***********************************/
+    .header--tienda{
+        height: 250px;
+    }
+
+    .mascotastienda{
+        margin: 10px 0;
+        transform: translateY(0);
+        &__mascotasbox{
+            justify-content: center;
+            flex-wrap: wrap;
+            &__card{
+                margin: 10px;
+                width: 110px;
+                height: 80px;
+                &__iconbox{
+                    transform: translate(-20px, 15px);
+                    height: 45px;
+                    width: 45px;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    .medios{
+        display: none;
+    }
 }
 
 @media (max-width:480px) {
@@ -1514,4 +1588,34 @@ p{
         font-size: 1.5em;
     }
 }
+
+/*****************************TIENDA**************************************/
+    .mascotastienda{
+        &__mascotasbox{
+            &__card{
+                max-width: 180px;
+                min-width: 130px;
+                height: 80px;
+            }
+        }
+    }
+    .dogproductos{
+        &__productosbox{
+            &__card{
+                width: 90%;
+                height: 360px;
+                pointer-events:none;
+                &__textbox{
+                    margin-top: 10px;
+                    font-size: 1.5em;
+                }
+                &__imgbox{
+                    height: 60%;
+                }
+                &__btn{
+                    pointer-events: all;
+                }
+            }
+        }
+    }
 }
