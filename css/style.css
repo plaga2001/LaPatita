@@ -259,6 +259,7 @@ p {
           align-items: flex-end;
   -webkit-transition: background 1s;
   transition: background 1s;
+  color: white;
 }
 
 .cards {
@@ -1231,6 +1232,26 @@ p {
           box-shadow: 0px 10px 13px -7px #000000, 0px 0px 22px 1px rgba(0, 0, 0, 0);
 }
 
+.adoptabtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adoptabtn__btn {
+  width: 20%;
+  -webkit-transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.adoptabtn__btn:hover {
+  background-color: #4a2986;
+  color: white;
+}
+
 /*************************************************CONTACTANOS***********************************************/
 @-webkit-keyframes fondo--contactos {
   0%, 100% {
@@ -2148,8 +2169,8 @@ p {
         grid-template-areas: "contac" "form";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 200px auto;
-        grid-template-rows: 200px auto;
+    -ms-grid-rows: 200px 100%;
+        grid-template-rows: 200px 100%;
   }
   .contactanos__logobox {
     display: none;
