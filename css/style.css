@@ -2133,6 +2133,11 @@ p {
   .frase__titlebox {
     margin: 0 10%;
   }
+  .adoptabtn__btn {
+    width: 40%;
+    -webkit-transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
   /********************************TIENDA***********************************/
   .header--tienda {
     height: 250px;
@@ -2274,6 +2279,11 @@ p {
   .frase__titlebox {
     margin: 0 5px;
     font-size: 1.5em;
+  }
+  .adoptabtn__btn {
+    width: 60%;
+    -webkit-transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   /*****************************TIENDA**************************************/
   .mascotastienda__mascotasbox__card {

@@ -1540,6 +1540,13 @@ p{
     }
 }
 
+.adoptabtn{
+    &__btn{
+        width: 40%;
+        transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
+
 /********************************TIENDA***********************************/
     .header--tienda{
         height: 250px;
@@ -1705,6 +1712,13 @@ p{
     &__titlebox{
         margin: 0 5px;
         font-size: 1.5em;
+    }
+}
+
+.adoptabtn{
+    &__btn{
+        width: 60%;
+        transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }
 
