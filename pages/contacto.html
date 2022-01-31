@@ -10,54 +10,67 @@
     <link rel="icon" href="../images/icono--web.png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: black;">
-        <a class="navbar-brand" href="../index.html"><i class="fas fa-paw" style="color: #A560B6"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon" style="color: white;"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link text-white" href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="./contacto.html">Contactos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="./galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="./tienda.html">Tienda</a>
-            </li>
-        </ul>
-        </div>
-    </nav>
-    <header class="header--colorized">
-        <div class="header--colorized__titlebox">
-            <h1>
-                CONTACTANOS
-            </h1>
-        </div>
-    </header>
     <main class="contac--wrap">
         <section class="contactanos">
-            <h3 class="co">Puedes contactarnos en:</h3>
-            <ul>
-                <li>Dirección: Av.Siempre Vida 4982</li>
-                <li>Tel: 1324629414</li>
-                <li>Tel2: 1165838149</li>
-                <li>Mail: <a href="#">lapatita@gmail.com</a></li>
-            </ul>
+            <div class="contactanos__logobox">
+                <a href="../index.html"><i class="fas fa-paw contactanos__logobox__icon"></i></a>
+            </div>
+            <div class="contactanos__titlebox">
+                <h1 class="contactanos__titlebox__title">ADOPTAR ES <br><span class="contactanos__titlebox__span">MARAVILLOSO</span></h1>
+            </div>
+            <div class="contactanos__textbox">
+                <p class="contactanos__textbox__text">Rellené el formulario y nos pondremos en contacto con usted.</p>
+            </div>
         </section>
-        <section class="formulariobox">
-            <form action="#" class="formulariobox__form">
-                    <h2>Formulario de adopcion</h2>
-                    <input type="text" class="formulariobox__form__input">
-                    <input type="email" class="formulariobox__form__input">
-                    <textarea name="Descripcion" cols="20" rows="2">Describe tu casa</textarea>
-            </form>
+        <section class="formulario">
+            <div class="formulario__titlebox">
+                <h1>Preformulario de adopción</h1>
+            </div>
+            <div class="formulario__formulariobox">
+                <form action="#" class="formulario__formulariobox__form">
+                    <div class="formulario__formulariobox__form__n">
+                        <input type="text" placeholder="Nombres" class="formulario__formulariobox__form__n__input formulario__formulariobox__form__n__input--min">
+                        <input type="text" placeholder="Apellidos" class="formulario__formulariobox__form__n__input formulario__formulariobox__form__n__input--min--2">                         
+                    </div>
+                    <div class="formulario__formulariobox__form__n">
+                        <input type="number" placeholder="Edad" class="formulario__formulariobox__form__n__input formulario__formulariobox__form__n__input--min">
+                        <input type="email" placeholder="Email" class="formulario__formulariobox__form__n__input formulario__formulariobox__form__n__input--min--2">
+                    </div>
+                    <div class="formulario__formulariobox__form__n">
+                        <input type="number" placeholder="Telefono" class="formulario__formulariobox__form__n__input formulario__formulariobox__form__n__input--max">
+                    </div>
+                    <div class="formulario__formulariobox__form__n">
+                        <input type="text" placeholder="Dirección" class="formulario__formulariobox__form__n__input formulario__formulariobox__form__n__input--max">
+                    </div>
+                    <div class="formulario__formulariobox__form__n">
+                        <input type="text" placeholder="Ocupación" class="formulario__formulariobox__form__n__input formulario__formulariobox__form__n__input--max">
+                    </div>
+                    <div class="formulario__formulariobox__form__n--radio">
+                        <input type="radio" name="hogar" value="casa" >
+                        <label for="casa">Casa</label>
+                        <input type="radio" name="hogar" value="depatartamento">
+                        <label for="departamento">Departamento</label>
+                    </div>
+                    <div class="formulario__formulariobox__form__btn">
+                        <input type="submit" class="formulario__formulariobox__form__btn--enviar">
+                        <input type="reset" value="Borrar" class="formulario__formulariobox__form__btn--borrar">
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
+    <footer class="footer footer--contac">
+        <div class="footer__ubi">
+            <ul class="footer__ubi__list">
+                <li>Dirección: Av. Siempre viva 4982</li>
+                <li>Tel: 1324629414</li>
+                <li>Mail: <a href="#">lapatita@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer__logo">
+            <h2><i class="fas fa-paw" style="color: #A560B6"></i>LA<br>PATITA</h2>
+        </div>
+    </footer>
     <script src="https://kit.fontawesome.com/96e4c031a1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

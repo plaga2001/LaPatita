@@ -102,7 +102,7 @@ $color-mascotas:(
 .image{
     max-width: 100%;
     width: 100%;
-    height: auto;
+    height: auto;;
     object-fit: cover;
 }
 
@@ -829,40 +829,112 @@ p{
     }
 }
 /*************************************************CONTACTANOS***********************************************/
+@keyframes fondo--contactos {
+    0%,100%{
+        background-image: url(../images/background--contactos--n1.jpg);
+    }
+    35%{
+        background-image: url(../images/background--contactos--n2.jpg);
+    }
+    50%{
+        background-image: url(../images/background--contactos--n3.jpg);
+    }
+    75%{
+        background-image: url(../images/background--contactos--n4.jpg);
+    }
+}
+
 .contac--wrap{
-    margin: 20px 0;
     display: grid;
     grid-template-areas: 
     "contac form"
+    "contac form"
     ;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px;
+    grid-template-columns: 45% auto;
+    grid-template-rows: 100vh;
 }
 
 .contactanos{
-    grid-area: contac;
-    margin: 0 20px;
-}
-
-.formulariobox{
-    grid-area: form;
-    margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    &__form{
-        width: 60%;
+    background-image: url(../images/background--contactos--n1.jpg);
+    animation: fondo--contactos 30s infinite cubic-bezier(0.23, 1, 0.320, 1);
+    animation-delay: 3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    &__logobox{
+        height: 90px;
+        font-size: 3em;
         display: flex;
-        flex-direction: column;
-        background-color: map-get($map: $color-mascotas, $key: color-dog);
-        height: 250px;
-        padding: 20px;
-        text-align: center;
-        border-radius: 15px;
-        &__input{
-            border-radius: 5px;
-            margin-bottom: 10px;
+        align-items: center;
+        margin-left: 5%;
+        color: white;
+    }
+    &__titlebox{
+        font-size: 1.5em;
+        margin-top: 15%;
+        margin-left: 5%;
+        &__span{
+            color: $font-color-colorized;
         }
     }
+    &__textbox{
+        font-size: 1.5em;
+        margin: 20px 5%;
+    }
+}
+
+.formulario{
+    grid-area: form;
+    &__titlebox{
+        text-align: center;
+        margin-top: 100px;
+        color: black;
+    }
+    &__formulariobox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        &__form{
+            &__n{
+                margin-bottom: 10px;
+                &__input{
+                    border: solid 1px gray;
+                    border-radius: 5px;
+                    height: 45px;
+                    &--max{
+                        width: 100%;
+                    }
+                    &--min{
+                        width: 50%;
+                        &--2{
+                            width: 48%;
+                        }
+                    }
+                }
+            }
+            &__btn{
+                &--enviar{
+                    width: 50%;
+                    padding: 10px;                    
+                    border: none;
+                    border-radius: 5px;
+                    background-color: $font-color-colorized;
+                    color: white;
+                }
+                &--borrar{
+                    width: 48%;
+                    border: none;
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.footer--contac{
+    margin: 0;
 }
 
 /***************************************************TIENDA*****************************************************/
@@ -1481,6 +1553,39 @@ p{
 
     .medios{
         display: none;
+    }
+/***********************************CONTACTOS*******************************/
+    .contac--wrap{
+        grid-template-areas: 
+        "contac"
+        "form"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px auto;
+    }
+
+    .contactanos{
+        &__logobox{
+            display: none;
+        }
+    }
+
+    .contactanos__titlebox{
+        margin-top: 50px;
+    }
+
+    .contactanos__textbox{
+        display: none;
+    }
+
+    .formulario{
+        &__titlebox{
+            margin-top: 20px;
+        }
+    }
+
+    .footer--contac{
+        margin-top: 10px;
     }
 }
 
