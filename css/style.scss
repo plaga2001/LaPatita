@@ -1650,6 +1650,7 @@ p{
         ;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 150px);
+        pointer-events: none;
     }
 }
 
@@ -1750,5 +1751,10 @@ p{
                 }
             }
         }
+    }
+
+    /*******************************CONTACTOS****************************/
+    .contactanos{
+        animation: none;
     }
 }

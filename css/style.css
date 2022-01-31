@@ -2230,6 +2230,7 @@ p {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (150px)[3];
         grid-template-rows: repeat(3, 150px);
+    pointer-events: none;
   }
   .cuida__circlebox {
     -webkit-animation: none;
@@ -2305,6 +2306,11 @@ p {
   }
   .dogproductos__productosbox__card__btn {
     pointer-events: all;
+  }
+  /*******************************CONTACTOS****************************/
+  .contactanos {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
